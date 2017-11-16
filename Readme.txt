@@ -1,12 +1,12 @@
 Readme
 ******
-1. Please use the Diptrace version 2.2 and above to open/edit the schematic & layout file. 
-Newer files are not backward compatible with older version of Diptrace.
-2. For hardware version 1.40 and below:
-- Please use the MAX6675 Library from Adafruit available from GitHub.
-3. For hardware version 1.50 and above:
-- Please use the MAX31855 Library from Rocket Scream available from GitHub.
-4. For all hardware revision, please use the latest Arduino PID Library written
-by Brett Beauregard available for down load GitHub too.
-5. Uncomment necessary compiler flag in the sketch for use with different 
-hardware revision.
+This is fork of Reflow-Oven-Controller project which aims to control DIY reflow ovens with minimum required hardware:
+- Arduino
+- Thermocouple (MAX6675 or MAX31855)
+- Solid state relay (zero cross trigerred)
+- PC/laptop
+With no dependency to more hardware like LCD or switch as you can find in Reflow-Oven-Controller.
+
+All the status output is sent to the serial terminal. Reflow proces is started or stopped by sending 's' character to Arduino over serial interface more hardware like LCD or switch as you can find in Reflow-Oven-Controller.
+
+In my implementation I use small "esperanza" oven, MAX6675 and FOTEK SSR-25DA.
